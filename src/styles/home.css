@@ -440,22 +440,23 @@
   .vmai-chat-input {
     padding: 12px;
     gap: 8px;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .vmai-chat-input input {
     font-size: 18px;
-    padding: 18px 20px;
+    padding: 18px 16px;
     min-height: 56px;
-    width: 100%;
+    flex: 1;
+    min-width: 0;
   }
   
   .vmai-chat-input button {
-    font-size: 16px;
-    padding: 18px 24px;
+    font-size: 14px;
+    padding: 18px 16px;
     min-height: 56px;
-    width: 100%;
-    margin-top: 8px;
+    width: 80px;
+    flex-shrink: 0;
   }
   
   .vmai-message-bubble {
