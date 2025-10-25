@@ -387,7 +387,7 @@
 }
 
 .vmai-chat-input button {
-  padding: 14px 24px;
+  padding: 20px 28px;
   border: none;
   border-radius: 25px;
   background: #FF6B35;
@@ -396,8 +396,8 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-height: 44px; /* Minimum touch target */
-  min-width: 80px;
+  min-height: 60px;
+  min-width: 100px;
   box-sizing: border-box;
 }
 
@@ -449,9 +449,10 @@
   }
   
   .vmai-chat-input button {
-    font-size: 14px;
-    padding: 12px 20px;
-    min-width: 70px;
+    font-size: 16px;
+    padding: 18px 24px;
+    min-width: 90px;
+    min-height: 56px;
   }
   
   .vmai-message-bubble {
