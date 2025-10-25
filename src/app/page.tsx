@@ -1,7 +1,11 @@
 "use client";
 
-import HomePage from "@/pages/Home";
+import Chat from "@/components/Chat";
 
 export default function Page() {
-  return <HomePage />;
+  return (
+    <main className="min-h-screen">
+      <Chat />
+    </main>
+  );
 }

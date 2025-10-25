@@ -37,7 +37,7 @@ const Chat = () => {
     const cachedMessages = localStorage.getItem(`vmai-chat-${sessionId}`);
     if (cachedMessages) {
       const parsed = JSON.parse(cachedMessages);
-      setMessages(parsed.map((msg: any) => ({
+      setMessages(parsed.map((msg: Message) => ({
         ...msg,
         timestamp: new Date(msg.timestamp)
       })));
