@@ -130,7 +130,7 @@ const Chat = () => {
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
+    if (e.key === 'Enter') {
       e.preventDefault();
       sendMessage();
     }
@@ -170,9 +170,9 @@ const Chat = () => {
           onChange={(e) => setUserInput(e.target.value)}
           onKeyPress={handleKeyPress}
           placeholder="Digite sua mensagem..."
-          disabled={loading}
+          disabled={false}
         />
-        <button onClick={sendMessage} disabled={loading || !userInput.trim()}>
+        <button onClick={sendMessage} disabled={!userInput.trim()}>
           Enviar
         </button>
       </div>
