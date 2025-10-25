@@ -21,9 +21,20 @@ const Chat = () => {
     return "Boa noite";
   };
 
+  // Gerar ID único da sessão
+  const getSessionId = () => {
+    let sessionId = localStorage.getItem('vmai-session-id');
+    if (!sessionId) {
+      sessionId = Date.now().toString() + Math.random().toString(36).substr(2, 9);
+      localStorage.setItem('vmai-session-id', sessionId);
+    }
+    return sessionId;
+  };
+
   // Carregar mensagens do cache e inicializar chat
   useEffect(() => {
-    const cachedMessages = localStorage.getItem('vmai-chat');
+    const sessionId = getSessionId();
+    const cachedMessages = localStorage.getItem(`vmai-chat-${sessionId}`);
     if (cachedMessages) {
       const parsed = JSON.parse(cachedMessages);
       setMessages(parsed.map((msg: any) => ({
@@ -50,14 +61,23 @@ const Chat = () => {
         }
       ];
       setMessages(initialMessages);
-      localStorage.setItem('vmai-chat', JSON.stringify(initialMessages));
+      localStorage.setItem(`vmai-chat-${sessionId}`, JSON.stringify(initialMessages));
     }
   }, []);
 
-  // Salvar mensagens no cache sempre que mudarem
+  // Salvar mensagens no cache e fazer scroll sempre que mudarem
   useEffect(() => {
     if (messages.length > 0) {
-      localStorage.setItem('vmai-chat', JSON.stringify(messages));
+      const sessionId = getSessionId();
+      localStorage.setItem(`vmai-chat-${sessionId}`, JSON.stringify(messages));
+      
+      // Scroll para a última mensagem
+      setTimeout(() => {
+        const messagesContainer = document.querySelector('.vmai-chat-messages');
+        if (messagesContainer) {
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+      }, 100);
     }
   }, [messages]);
 
@@ -77,7 +97,8 @@ const Chat = () => {
     setLoading(true);
 
     try {
-      const messageHistory = updatedMessages.map(msg => ({
+      // Enviar últimas 10 mensagens para manter contexto
+      const messageHistory = updatedMessages.slice(-10).map(msg => ({
         role: msg.role,
         content: msg.content
       }));
@@ -125,7 +146,7 @@ const Chat = () => {
         {messages.map((message, index) => (
           <div key={index} className={`vmai-message ${message.role}`}>
             <div className="vmai-message-bubble">
-              <div dangerouslySetInnerHTML={{ __html: message.content.replace(/https?:\/\/[^\s]+/g, '<a href="$&" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: underline;">$&</a>') }} />
+              <div dangerouslySetInnerHTML={{ __html: message.content.replace(/https?:\/\/[^\s)]+/g, '<a href="$&" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: underline;">$&</a>') }} />
             </div>
           </div>
         ))}
