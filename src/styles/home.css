@@ -366,14 +366,14 @@
 
 .vmai-chat-input input {
   flex: 1;
-  padding: 14px 18px;
+  padding: 20px 24px;
   border: none;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.9);
   color: #333;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
-  min-height: 44px; /* Minimum touch target */
+  min-height: 60px;
   box-sizing: border-box;
 }
 
@@ -443,8 +443,9 @@
   }
   
   .vmai-chat-input input {
-    font-size: 16px; /* Prevent zoom on iOS */
-    padding: 12px 16px;
+    font-size: 18px;
+    padding: 18px 20px;
+    min-height: 56px;
   }
   
   .vmai-chat-input button {
