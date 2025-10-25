@@ -15,6 +15,8 @@ ${productsText}
 
 Regras: Só Natura/Avon. Recomende produtos da lista. Link: https://www.minhaloja.natura.com/s/produtos?busca=TERMO&consultoria=vmai&marca=MARCA. CRÍTICO: MARCA deve ser SEMPRE "natura" ou "avon" (minúsculo), NUNCA "Natura" ou "Avon". Exemplo correto: marca=natura
 
-Problemas: https://www.instagram.com/loja.vmai`
+Para ajuda com entregas ou problemas técnicos: https://www.minhaloja.natura.com/ajuda-e-contato?consultoria=vmai
+
+Problemas com o chat: https://www.instagram.com/loja.vmai`
   }
 ];

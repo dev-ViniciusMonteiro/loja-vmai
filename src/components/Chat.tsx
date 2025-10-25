@@ -51,7 +51,7 @@ const Chat = () => {
         },
         {
           role: "assistant",
-          content: "Sou sua IA pessoal VMAI e irei ajudar a escolher o melhor produto Natura ou Avon.",
+          content: "Sou sua IA pessoal VMAI e irei ajudar a escolher o melhor produto Natura ou Avon.\n\nVisite nossa loja: https://www.minhaloja.natura.com/consultoria/vmai",
           timestamp: new Date(Date.now() + 1000)
         },
         {
@@ -139,7 +139,7 @@ const Chat = () => {
   return (
     <div className="vmai-chat-container">
       <div className="vmai-chat-header">
-        <h1>Fale com seu consultor online</h1>
+        <h1>Sua consultora digital sempre online 💄🤖</h1>
       </div>
       
       <div className="vmai-chat-messages">
