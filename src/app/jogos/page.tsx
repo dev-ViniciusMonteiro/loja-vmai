@@ -21,9 +21,21 @@ interface Result {
   color: string;
 }
 
+const shuffleOptions = (question: Question): Question => {
+  const correctAnswer = question.options[question.correct];
+  const shuffledOptions = [...question.options].sort(() => 0.5 - Math.random());
+  const newCorrectIndex = shuffledOptions.indexOf(correctAnswer);
+  
+  return {
+    ...question,
+    options: shuffledOptions,
+    correct: newCorrectIndex
+  };
+};
+
 const getRandomQuestions = (questions: Question[], count: number): Question[] => {
   const shuffled = [...questions].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
+  return shuffled.slice(0, count).map(shuffleOptions);
 };
 
 const getResult = (score: number): Result => {
