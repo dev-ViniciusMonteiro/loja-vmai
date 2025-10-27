@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import "../styles/home.css";
 import { trackChatStart, trackChatMessage } from "../app/utils/gtag";
 
@@ -144,7 +145,7 @@ const Chat = () => {
   return (
     <div className="vmai-chat-container">
       <div className="vmai-chat-header">
-        <a href="/" className="vmai-back-button">← Home</a>
+        <Link href="/" className="vmai-back-button">← Home</Link>
         <h1>Sua consultora digital sempre online 🎃💄</h1>
       </div>
       

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import questionsData from "@/data/quiz-questions.json";
 import resultsData from "@/data/quiz-results.json";
-import { trackQuizStart, trackQuizAnswer, trackQuizComplete, trackCoupon, trackClick } from "../utils/gtag";
+import { trackCoupon } from "../utils/gtag";
 
 interface Question {
   question: string;

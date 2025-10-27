@@ -1,10 +1,10 @@
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
-export const gtag = (...args: any[]) => {
+export const gtag = (...args: unknown[]) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag(...args);
   }

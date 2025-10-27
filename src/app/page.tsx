@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import "@/styles/home.css";
 import { trackBrandClick, trackClick } from "./utils/gtag";
+import TrackingToggle from "./components/TrackingToggle";
 
 export default function HomePage() {
   return (
@@ -19,13 +21,13 @@ export default function HomePage() {
         
         <div className="home-cards">
           <a href="https://www.minhaloja.natura.com/consultoria/vmai" target="_blank" rel="noopener noreferrer" className="home-card" onClick={() => trackBrandClick('natura')}>
-            <img src="/natura.png" alt="Natura" className="home-card-image" />
+            <Image src="/natura.png" alt="Natura" width={80} height={80} className="home-card-image" />
             <h3>Natura</h3>
             <p>Produtos naturais e sustentáveis para sua beleza</p>
           </a>
           
           <a href="https://www.minhaloja.natura.com/consultoria/vmai?marca=avon" target="_blank" rel="noopener noreferrer" className="home-card" onClick={() => trackBrandClick('avon')}>
-            <img src="/avon.png" alt="Avon" className="home-card-image" />
+            <Image src="/avon.png" alt="Avon" width={80} height={80} className="home-card-image" />
             <h3>Avon</h3>
             <p>Cosméticos e fragrâncias que realçam sua beleza</p>
           </a>
@@ -35,6 +37,15 @@ export default function HomePage() {
       <Link href="/chat" className="chat-bubble" onClick={() => trackClick('chat_bubble', '/chat')}>
         💬
       </Link>
+      
+      <div className="fixed bottom-4 left-4 text-xs flex items-center gap-3">
+        <Link href="/termos" className="text-white/70 hover:text-white underline">
+          Termos de Uso
+        </Link>
+        <div className="text-white/70">
+          <TrackingToggle />
+        </div>
+      </div>
     </main>
   );
 }
