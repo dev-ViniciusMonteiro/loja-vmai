@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import "../styles/home.css";
+import { trackChatStart, trackChatMessage } from "../app/utils/gtag";
 
 interface Message {
   role: "user" | "assistant";
@@ -62,6 +63,7 @@ const Chat = () => {
       ];
       setMessages(initialMessages);
       localStorage.setItem(`vmai-chat-${sessionId}`, JSON.stringify(initialMessages));
+      trackChatStart();
     }
   }, []);
 
@@ -95,6 +97,8 @@ const Chat = () => {
     setMessages(updatedMessages);
     setUserInput("");
     setLoading(true);
+    
+    trackChatMessage(message, "user");
 
     try {
       // Enviar últimas 10 mensagens para manter contexto
@@ -117,6 +121,7 @@ const Chat = () => {
       };
 
       setMessages(prev => [...prev, assistantMessage]);
+      trackChatMessage(data.result || "Erro", "assistant");
     } catch (err: unknown) {
       const errorMessage: Message = {
         role: "assistant",
@@ -139,6 +144,7 @@ const Chat = () => {
   return (
     <div className="vmai-chat-container">
       <div className="vmai-chat-header">
+        <a href="/" className="vmai-back-button">← Home</a>
         <h1>Sua consultora digital sempre online 🎃💄</h1>
       </div>
       

@@ -1,0 +1,352 @@
+[
+  {
+    "question": "Qual destes ingredientes é amplamente usado nos produtos Natura Ekos?",
+    "options": ["Óleo de coco", "Castanha-do-Pará", "Açaí", "Lavanda"],
+    "correct": 1
+  },
+  {
+    "question": "A Avon foi pioneira em qual dessas áreas?",
+    "options": ["Perfumes de luxo", "Venda por catálogo", "Maquiagens veganas", "Cremes solares"],
+    "correct": 1
+  },
+  {
+    "question": "Qual produto da Natura é famoso por sua fragrância marcante e embalagem dourada?",
+    "options": ["Humor", "Essencial", "Kaiak", "Luna"],
+    "correct": 1
+  },
+  {
+    "question": "Qual destas linhas da Avon é conhecida por combater sinais de envelhecimento?",
+    "options": ["Clearskin", "Renew", "Far Away", "Color Trend"],
+    "correct": 1
+  },
+  {
+    "question": "Qual dessas frases representa o compromisso da Natura com o meio ambiente?",
+    "options": ["Cuidar da pele é cuidar de você", "Bonita é a natureza", "Bem estar bem", "Sinta-se viva"],
+    "correct": 2
+  },
+  {
+    "question": "Qual destes perfumes masculinos da Natura é mais associado à aventura e frescor?",
+    "options": ["Essencial", "Kaiak", "Luna", "Humor"],
+    "correct": 1
+  },
+  {
+    "question": "O que significa 'consultoria de beleza digital'?",
+    "options": ["Vendas apenas por WhatsApp", "Atendimento online com recomendações personalizadas", "Uso de filtros nas redes sociais", "Entregas por motoboy"],
+    "correct": 1
+  },
+  {
+    "question": "Qual dessas ações faz parte do compromisso sustentável da Avon?",
+    "options": ["Não testar em animais", "Reduzir fragrâncias", "Eliminar produtos cremosos", "Parar de usar maquiagem"],
+    "correct": 0
+  },
+  {
+    "question": "Qual linha da Natura é voltada para cuidados com os cabelos?",
+    "options": ["Tododia", "Lumina", "Ekos", "Faces"],
+    "correct": 1
+  },
+  {
+    "question": "O que o nome 'VMAI' representa em sua essência?",
+    "options": ["Virtual Makeup Assistant Inteligente", "Venda Manual Automática Instantânea", "Vitrine Mágica da Avon e Itens", "Versão Moderna de Atendimento Inteligente"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente é famoso por suas propriedades hidratantes?",
+    "options": ["Ácido hialurônico", "Ácido cítrico", "Óleo mineral apenas", "Parafina"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses produtos ajuda a proteger a pele do sol?",
+    "options": ["Protetor solar", "Hidratante labial", "Sérum anti-idade", "Batom matte"],
+    "correct": 0
+  },
+  {
+    "question": "Qual vitamina é indicada para a saúde da pele?",
+    "options": ["Vitamina C", "Vitamina B12", "Vitamina K", "Vitamina D apenas"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente é usado para combater sinais de envelhecimento?",
+    "options": ["Retinol", "Álcool", "Fragrância", "Óleo de coco"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses produtos é essencial para limpeza facial diária?",
+    "options": ["Sabonete facial", "Perfume", "Base líquida", "Batom"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é a principal função de um hidratante corporal?",
+    "options": ["Manter a pele macia e nutrida", "Dar cor à pele", "Proteger do sol apenas", "Servir como perfume"],
+    "correct": 0
+  },
+  {
+    "question": "O que significa 'vegan' em cosméticos?",
+    "options": ["Sem ingredientes de origem animal", "Produto importado", "Produto caro", "Produto somente para cabelo"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente natural da linha Ekos ajuda na nutrição da pele?",
+    "options": ["Castanha-do-Pará", "Lavanda", "Morango", "Baunilha"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ácido é popular para esfoliação da pele?",
+    "options": ["Ácido glicólico", "Ácido lático apenas", "Ácido cítrico", "Ácido hialurônico"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente é conhecido por acalmar a pele sensível?",
+    "options": ["Aloe vera", "Óleo de argan", "Álcool", "Retinol"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses ajuda a combater manchas na pele?",
+    "options": ["Vitamina C", "Vitamina A", "Óleo mineral", "Fragrância"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tipo de produto é indicado para pele oleosa?",
+    "options": ["Gel ou loção leve", "Creme pesado", "Óleo corporal", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é essencial antes de dormir para regeneração da pele?",
+    "options": ["Sérum noturno", "Base líquida", "Perfume", "Batom"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é a função do protetor labial?",
+    "options": ["Hidratar e proteger os lábios", "Dar cor", "Servir como perfume", "Esfoliar"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente é famoso por efeito antioxidante?",
+    "options": ["Chá verde", "Óleo de coco", "Sal marinho", "Ácido hialurônico"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto ajuda a remover maquiagem?",
+    "options": ["Demaquilante", "Hidratante corporal", "Protetor solar", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto ajuda na firmeza da pele?",
+    "options": ["Creme anti-idade", "Batom matte", "Base líquida", "Perfume floral"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses é importante para cuidados diários da pele do rosto?",
+    "options": ["Limpeza, hidratação e proteção solar", "Perfume e batom", "Shampoo e condicionador", "Somente esfoliação"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente ajuda na regeneração da pele?",
+    "options": ["Vitamina E", "Vitamina K", "Ácido cítrico", "Parafina"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tipo de pele necessita de produtos específicos para controle de oleosidade?",
+    "options": ["Pele mista ou oleosa", "Pele seca apenas", "Pele sensível apenas", "Qualquer pele"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é usado para uniformizar o tom da pele?",
+    "options": ["Base", "Blush", "Iluminador", "Batom"],
+    "correct": 0
+  },
+  {
+    "question": "O que o corretivo faz?",
+    "options": ["Cobre imperfeições", "Hidrata a pele", "Perfuma", "Dá brilho"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto destaca as maçãs do rosto?",
+    "options": ["Blush", "Base", "Corretivo", "Primer"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é usado para definir sobrancelhas?",
+    "options": ["Lápis ou gel", "Base", "Blush", "Iluminador"],
+    "correct": 0
+  },
+  {
+    "question": "O iluminador serve para:",
+    "options": ["Destacar pontos de luz no rosto", "Cobrir imperfeições", "Hidratar a pele", "Corrigir olheiras"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é indicado para olhos?",
+    "options": ["Sombra", "Batom", "Base", "Hidratante"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tendência de maquiagem está em alta atualmente?",
+    "options": ["Olhos marcantes e pele natural", "Pele pesada e contorno exagerado", "Batom neon apenas", "Somente glitter"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tipo de batom dura mais?",
+    "options": ["Matte", "Cremoso", "Gloss", "Lip balm"],
+    "correct": 0
+  },
+  {
+    "question": "O que é um primer facial?",
+    "options": ["Produto que prepara a pele antes da maquiagem", "Corretivo", "Hidratante labial", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é usado para fixar a maquiagem?",
+    "options": ["Spray fixador", "Base", "Iluminador", "Blush"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é específico para cílios?",
+    "options": ["Máscara ou rímel", "Blush", "Corretivo", "Iluminador"],
+    "correct": 0
+  },
+  {
+    "question": "Qual técnica de maquiagem ajuda a aumentar os olhos?",
+    "options": ["Delineado gatinho", "Blush marcante", "Base escura", "Batom escuro"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses é usado para contorno facial?",
+    "options": ["Bronzer ou contorno", "Corretivo", "Iluminador", "Batom"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tipo de sombra dura mais?",
+    "options": ["Sombra cremosa ou base de sombra", "Sombra em pó comum", "Blush", "Iluminador"],
+    "correct": 0
+  },
+  {
+    "question": "O que faz um batom líquido matte?",
+    "options": ["Cobertura intensa e longa duração", "Hidrata apenas", "Perfuma os lábios", "Ilumina o rosto"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto ajuda a fixar o corretivo?",
+    "options": ["Pó compacto", "Blush", "Batom", "Iluminador"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tendência atual de sobrancelha é mais natural?",
+    "options": ["Sobrancelha bem penteada e levemente preenchida", "Super arqueada", "Desenhada artificialmente", "Raspada"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é usado para dar volume aos lábios?",
+    "options": ["Lip plumper", "Base", "Blush", "Corretivo"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tipo de blush é mais fácil de esfumar?",
+    "options": ["Blush em creme", "Blush em pó compacto", "Blush líquido", "Iluminador"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto é usado para remover excesso de oleosidade da pele com maquiagem?",
+    "options": ["Papel absorvente ou pó", "Corretivo", "Base líquida", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses hábitos ajuda a manter a pele saudável?",
+    "options": ["Beber água suficiente", "Dormir pouco", "Fumar", "Evitar frutas"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses alimentos é bom para cabelo saudável?",
+    "options": ["Peixes ricos em ômega-3", "Frituras", "Açúcares refinados", "Refrigerante"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto ajuda a manter unhas fortes?",
+    "options": ["Fortalecedor de unhas", "Base líquida", "Corretivo", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses ajuda a prevenir rugas?",
+    "options": ["Protetor solar", "Batom matte", "Iluminador", "Máscara"],
+    "correct": 0
+  },
+  {
+    "question": "Qual hábito noturno ajuda na regeneração da pele?",
+    "options": ["Dormir bem", "Assistir TV até tarde", "Comer doces", "Usar maquiagem sem remover"],
+    "correct": 0
+  },
+  {
+    "question": "Qual ingrediente natural ajuda a acalmar a pele após exposição ao sol?",
+    "options": ["Aloe vera", "Café", "Açúcar", "Óleo mineral"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é a melhor forma de aplicar protetor solar?",
+    "options": ["Cobrir toda a pele exposta, reaplicando a cada 2h", "Apenas no rosto", "Apenas no pescoço", "Uma vez ao dia"],
+    "correct": 0
+  },
+  {
+    "question": "Qual tipo de cabelo precisa de hidratação mais frequente?",
+    "options": ["Cacheado e crespo", "Liso fino", "Loiro natural", "Ruivo apenas"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto ajuda a remover cravos e impurezas?",
+    "options": ["Máscara facial purificante", "Batom", "Base líquida", "Iluminador"],
+    "correct": 0
+  },
+  {
+    "question": "Qual prática ajuda a evitar queda de cabelo?",
+    "options": ["Evitar calor excessivo e químicas", "Pentear com força", "Lavar uma vez por semana", "Nunca usar condicionador"],
+    "correct": 0
+  },
+  {
+    "question": "Qual dessas é uma tendência de maquiagem sustentável?",
+    "options": ["Produtos refill e veganos", "Produtos descartáveis", "Maquiagem sintética cara", "Somente sombras em pó"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é o principal benefício de remover a maquiagem antes de dormir?",
+    "options": ["Prevenir acne e envelhecimento precoce", "Hidratar a pele", "Dar cor à pele", "Perfumar o rosto"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses ajuda a reduzir olheiras?",
+    "options": ["Corretivo com efeito iluminador", "Blush", "Iluminador labial", "Base corporal"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é a principal função de um esfoliante facial?",
+    "options": ["Remover células mortas", "Dar cor à pele", "Hidratar apenas", "Perfumar"],
+    "correct": 0
+  },
+  {
+    "question": "Qual hábito ajuda a manter cabelo saudável?",
+    "options": ["Hidratar e cortar regularmente", "Lavar com água quente diariamente", "Evitar shampoos", "Pentear com força"],
+    "correct": 0
+  },
+  {
+    "question": "Qual produto ajuda a proteger mãos e unhas?",
+    "options": ["Creme de mãos", "Base líquida", "Blush", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses alimentos ajuda na saúde da pele?",
+    "options": ["Frutas e verduras", "Fast food", "Refrigerantes", "Doces"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é a principal função de um sérum facial?",
+    "options": ["Concentrado de ativos para tratar pele", "Dar cor", "Servir de base", "Perfume"],
+    "correct": 0
+  },
+  {
+    "question": "Qual é o produto ideal para retirar maquiagem à prova d'água?",
+    "options": ["Demaquilante bifásico", "Sabonete comum", "Água micelar apenas", "Loção corporal"],
+    "correct": 0
+  },
+  {
+    "question": "Qual desses cuidados é essencial para cabelos tingidos?",
+    "options": ["Hidratação e shampoo específico", "Pentear com força", "Lavar com água quente", "Nunca usar condicionador"],
+    "correct": 0
+  }
+]

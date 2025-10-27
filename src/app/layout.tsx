@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vinicius Monteiro IA",
-  description: "Chat com a IA pessoal de Vinicius Monteiro",
+  title: "VMAI IA de vendas Natura e Avon",
+  description: "Chat com a IA para vendas Natura e Avon",
 };
 
 // GTM ID do .env.local

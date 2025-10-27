@@ -1,3 +1,213 @@
+/* Home Styles */
+.home-container {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.home-content {
+  max-width: 800px;
+  padding: 1rem;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+}
+
+.home-hero {
+  margin-bottom: 2rem;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.home-subtitle {
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.home-main-button {
+  display: inline-block;
+  background: #FF6B35;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.home-main-button:hover {
+  background: #CC5500;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.home-card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.home-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.home-card p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.chat-bubble {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: #FF6B35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  animation: glow 2s ease-in-out infinite alternate;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.chat-bubble:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  }
+  to {
+    box-shadow: 0 4px 25px rgba(255, 107, 53, 0.8), 0 0 30px rgba(255, 107, 53, 0.3);
+  }
+}
+
+.text-gold {
+  color: #ffd700;
+}
+
+.border-gold {
+  border-color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 0.5rem;
+  }
+  
+  .home-content {
+    padding: 0.5rem;
+  }
+  
+  .home-hero {
+    margin-bottom: 1rem;
+  }
+  
+  .home-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .home-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-main-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .home-cards {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .home-card {
+    padding: 0.75rem;
+  }
+  
+  .home-card-image {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0.5rem auto;
+    display: block;
+  }
+  
+  .home-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .home-card p {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  
+  .chat-bubble {
+    width: 45px;
+    height: 45px;
+    font-size: 1.125rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
 .sobre-container {
   position: relative;
   min-height: 100vh;
@@ -249,6 +459,12 @@
   overflow: hidden; /* Prevent page scroll */
 }
 
+@supports (-webkit-touch-callout: none) {
+  .vmai-chat-container {
+    height: -webkit-fill-available;
+  }
+}
+
 .vmai-chat-header {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -256,6 +472,23 @@
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   flex-shrink: 0; /* Don't shrink header */
+  position: relative;
+}
+
+.vmai-back-button {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FF6B35;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.vmai-back-button:hover {
+  color: #CC5500;
 }
 
 .vmai-chat-header h1 {
@@ -417,6 +650,12 @@
   .vmai-chat-container {
     height: 100vh;
     height: 100dvh;
+  }
+  
+  @supports (-webkit-touch-callout: none) {
+    .vmai-chat-container {
+      height: -webkit-fill-available;
+    }
   }
   
   .vmai-message {
