@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { trackCertificate } from "../utils/gtag";
 
-export default function CertificadoPage() {
+function CertificadoContent() {
   const [nickname, setNickname] = useState("");
   const [showCertificate, setShowCertificate] = useState(false);
   const searchParams = useSearchParams();
@@ -124,5 +124,20 @@ export default function CertificadoPage() {
         </div>
       </div>
     </main>
+  );
+}
+
+export default function CertificadoPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-white text-gray-800 p-8 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-4xl mb-4">🏆</div>
+          <p className="text-lg">Carregando...</p>
+        </div>
+      </main>
+    }>
+      <CertificadoContent />
+    </Suspense>
   );
 }
