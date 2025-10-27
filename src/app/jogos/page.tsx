@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import questionsData from "@/data/quiz-questions.json";
 import resultsData from "@/data/quiz-results.json";
-import { trackCoupon } from "../utils/gtag";
+// import { trackCoupon } from "../utils/gtag";
 
 interface Question {
   question: string;
@@ -110,7 +110,7 @@ export default function JogosPage() {
   const copyDiscount = () => {
     const cupom = result.description.split('Cupom: ')[1];
     navigator.clipboard.writeText(cupom);
-    trackCoupon(cupom);
+    // trackCoupon(cupom);
     alert('Cupom copiado!');
   };
 
