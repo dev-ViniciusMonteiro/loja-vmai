@@ -14,7 +14,10 @@ export default function CartPage() {
     }
 
     const orderedItems = items
-      .map((item) => `- ${item.name} x${item.quantity} - ${formatPrice(item.price * item.quantity)}`)
+      .map(
+        (item) =>
+          `- ${item.name}\n  Quantidade: ${item.quantity}\n  Valor unitário: ${formatPrice(item.price)}\n  Subtotal: ${formatPrice(item.price * item.quantity)}`
+      )
       .join("\n");
 
     const message = [
