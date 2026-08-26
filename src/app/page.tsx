@@ -1,51 +1,76 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
-import "@/styles/home.css";
-import { trackBrandClick, trackClick } from "./utils/gtag";
-import TrackingToggle from "./components/TrackingToggle";
+import { catalog } from "@/data/catalog";
+import { ProductCard } from "@/components/ProductCard";
 
 export default function HomePage() {
+  const featuredProducts = catalog.products.filter((product) => product.featured);
+  const categories = catalog.categories;
+
   return (
-    <main className="home-container">
-      <div className="home-content">
-        <div className="home-hero">
-          <h1 className="home-title">💄 Sua consultora digital de beleza</h1>
-          <p className="home-subtitle">Fale com a VMAI e receba dicas, promoções e suporte 24h.</p>
-          
-          <Link href="/jogos" className="home-main-button" onClick={() => trackClick('quiz_button', '/jogos')}>
-            🧠 Quiz
-          </Link>
+    <>
+      <section className="hero-section">
+        <div className="container hero-layout">
+          <div className="hero-copy">
+            <span className="eyebrow">V&M Plastic</span>
+            <h1>Materiais plásticos para organizar, decorar e viver melhor.</h1>
+            <p>
+              Produtos práticos para cozinha, organização, prateleiras, suportes e itens
+              promocionais com qualidade e atendimento personalizado.
+            </p>
+            <div className="hero-actions">
+              <Link href="#categorias" className="primary-button">
+                Ver categorias
+              </Link>
+              <Link href="/carrinho" className="secondary-button">
+                Fazer pedido
+              </Link>
+            </div>
+          </div>
+
+          <div className="hero-highlight">
+            <div className="mini-card">
+              <strong>+1.200</strong>
+              <span>itens vendidos</span>
+            </div>
+            <div className="mini-card">
+              <strong>24h</strong>
+              <span>atendimento</span>
+            </div>
+          </div>
         </div>
-        
-        <div className="home-cards">
-          <a href="https://www.minhaloja.natura.com/consultoria/vmai" target="_blank" rel="noopener noreferrer" className="home-card" onClick={() => trackBrandClick('natura')}>
-            <Image src="/natura.png" alt="Natura" width={80} height={80} className="home-card-image" />
-            <h3>Natura</h3>
-            <p>Produtos naturais e sustentáveis para sua beleza</p>
-          </a>
-          
-          <a href="https://www.minhaloja.natura.com/consultoria/vmai?marca=avon" target="_blank" rel="noopener noreferrer" className="home-card" onClick={() => trackBrandClick('avon')}>
-            <Image src="/avon.png" alt="Avon" width={80} height={80} className="home-card-image" />
-            <h3>Avon</h3>
-            <p>Cosméticos e fragrâncias que realçam sua beleza</p>
-          </a>
+      </section>
+
+      <section id="categorias" className="container section-spacing">
+        <div className="section-heading">
+          <span className="eyebrow">Categorias</span>
+          <h2>Explore por necessidade</h2>
         </div>
-      </div>
-      
-      <Link href="/chat" className="chat-bubble" onClick={() => trackClick('chat_bubble', '/chat')}>
-        💬
-      </Link>
-      
-      <div className="fixed bottom-4 left-4 text-xs flex items-center gap-3">
-        <Link href="/termos" className="text-white/70 hover:text-white underline">
-          Termos de Uso
-        </Link>
-        <div className="text-white/70">
-          <TrackingToggle />
+
+        <div className="category-grid">
+          {categories.map((category) => (
+            <Link href={`/categoria/${category.slug}`} key={category.slug} className="category-card">
+              <img src={category.image} alt={category.name} />
+              <div className="category-overlay">
+                <h3>{category.name}</h3>
+                <p>{category.description}</p>
+              </div>
+            </Link>
+          ))}
         </div>
-      </div>
-    </main>
+      </section>
+
+      <section className="container section-spacing">
+        <div className="section-heading">
+          <span className="eyebrow">Destaques</span>
+          <h2>Produtos em destaque</h2>
+        </div>
+
+        <div className="product-grid">
+          {featuredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

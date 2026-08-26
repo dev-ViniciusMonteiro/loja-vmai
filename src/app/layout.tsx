@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/components/CartContext";
+import { StoreLayout } from "@/components/StoreLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,11 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VMAI IA de vendas Natura e Avon",
-  description: "Chat com a IA para vendas Natura e Avon",
+  title: "VM Plastic | Materiais Plásticos",
+  description: "Loja online de materiais plásticos, prateleiras, suportes, cozinha e chaveiros.",
 };
 
-// GTM ID do .env.local
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
 
@@ -30,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        {/* Google Tag Manager */}
         {GTM_ID && (
           <script
             dangerouslySetInnerHTML={{
@@ -45,24 +45,22 @@ export default function RootLayout({
           />
         )}
 
-        {/* Microsoft Clarity */}
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "${CLARITY_ID}");
-            `,
-          }}
-        />
+        {CLARITY_ID && (
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "${CLARITY_ID}");
+              `,
+            }}
+          />
+        )}
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* GTM noscript fallback */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {GTM_ID && (
           <noscript>
             <iframe
@@ -73,7 +71,9 @@ export default function RootLayout({
             ></iframe>
           </noscript>
         )}
-        {children}
+        <CartProvider>
+          <StoreLayout>{children}</StoreLayout>
+        </CartProvider>
       </body>
     </html>
   );

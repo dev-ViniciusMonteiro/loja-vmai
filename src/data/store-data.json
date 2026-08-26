@@ -1,0 +1,150 @@
+{
+  "categories": [
+    {
+      "slug": "prateleiras-e-suportes",
+      "name": "Prateleiras e Suportes",
+      "description": "Estruturas resistentes para organização, exposição e uso profissional.",
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "slug": "cozinha",
+      "name": "Cozinha",
+      "description": "Acessórios e utilidades plásticas para o dia a dia da sua casa e negócio.",
+      "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "slug": "chaveiros",
+      "name": "Chaveiros",
+      "description": "Peças personalizadas, promocionais e funcionais para presentes e uso diário.",
+      "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "slug": "organizacao",
+      "name": "Organização",
+      "description": "Solucionamos o espaço com peças práticas e duráveis.",
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "products": [
+    {
+      "id": "prateleira-03-rs",
+      "slug": "prateleira-3-niveis-rs",
+      "category": "prateleiras-e-suportes",
+      "name": "Prateleira 3 Níveis RS",
+      "price": 119.9,
+      "description": "Prateleira em plástico resistente, ideal para organização de ambientes comerciais e domésticos. Estrutura leve e fácil de instalar.",
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+      "featured": true,
+      "badge": "Mais vendido",
+      "features": ["3 níveis", "Material resistente", "Fácil montagem"]
+    },
+    {
+      "id": "suporte-tv-40",
+      "slug": "suporte-para-tv-40-pol",
+      "category": "prateleiras-e-suportes",
+      "name": "Suporte para TV 40" ,
+      "price": 189.0,
+      "description": "Suporte ajustável para televisores até 40 polegadas com base estável e acabamento profissional.",
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=80",
+      "featured": true,
+      "badge": "Popular",
+      "features": ["Ajuste de ângulo", "Base estável", "Uso doméstico e comercial"]
+    },
+    {
+      "id": "organizador-copo",
+      "slug": "organizador-para-copos",
+      "category": "organizacao",
+      "name": "Organizador para Copos",
+      "price": 69.9,
+      "description": "Peça prática para guardar copos, garrafas e utensílios com organização visual e durabilidade.",
+      "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "badge": "Novo",
+      "features": ["Alta capacidade", "Design limpo", "Fácil limpeza"]
+    },
+    {
+      "id": "bandeja-kitchen",
+      "slug": "bandeja-porta-objetos",
+      "category": "cozinha",
+      "name": "Bandeja para Cozinha",
+      "price": 59.9,
+      "description": "Bandeja versátil para organização de itens de cozinha, alimentos e utensílios do dia a dia.",
+      "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "badge": "Funcional",
+      "features": ["Antideslizante", "Leve", "Versátil"]
+    },
+    {
+      "id": "escorredor-aco",
+      "slug": "escorredor-de-pratos",
+      "category": "cozinha",
+      "name": "Escorredor de Pratos",
+      "price": 79.9,
+      "description": "Escorredor de plástico para utensílios e louça, ideal para uso doméstico e pequeno comércio.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
+      "featured": true,
+      "badge": "Prático",
+      "features": ["Fácil de limpar", "Secagem eficiente", "Leve e resistente"]
+    },
+    {
+      "id": "porta-ovos",
+      "slug": "porta-ovos-organizador",
+      "category": "cozinha",
+      "name": "Porta Ovos Organizacional",
+      "price": 49.9,
+      "description": "Acompanha organização da cozinha com design simples, cômodo e resistente ao uso frequente.",
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "badge": "Economia",
+      "features": ["Uso diário", "Boa durabilidade", "Compacto"]
+    },
+    {
+      "id": "chaveiro-abc",
+      "slug": "chaveiro-personalizado-abc",
+      "category": "chaveiros",
+      "name": "Chaveiro Personalizado ABC",
+      "price": 24.9,
+      "description": "Modelo funcional para uso pessoal, presente e divulgação de marca em material plástico resistente.",
+      "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "badge": "Personalizável",
+      "features": ["Personalização", "Leve", "Popular"]
+    },
+    {
+      "id": "chaveiro-empresa",
+      "slug": "chaveiro-para-empresa",
+      "category": "chaveiros",
+      "name": "Chaveiro para Empresa",
+      "price": 34.9,
+      "description": "Ação promocional ideal para brindes e presentes corporativos com acabamento limpo e funcional.",
+      "image": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=900&q=80",
+      "featured": true,
+      "badge": "Promo",
+      "features": ["Brinde corporativo", "Alta durabilidade", "Modelo premium"]
+    },
+    {
+      "id": "box-plastico",
+      "slug": "box-plastico-para-organizacao",
+      "category": "organizacao",
+      "name": "Box Plástico para Organização",
+      "price": 89.9,
+      "description": "Caixa organizadora em material plástico com tampa, feita para armazenar pequenos itens em casa ou escritório.",
+      "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "badge": "Organização",
+      "features": ["Tampa", "Armazenamento seguro", "Versátil"]
+    },
+    {
+      "id": "suporte-caixa",
+      "slug": "suporte-para-caixas",
+      "category": "prateleiras-e-suportes",
+      "name": "Suporte para Caixas",
+      "price": 99.9,
+      "description": "Estrutura útil para sustentar caixas, material de escritório e organização em ambiente comercial.",
+      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
+      "featured": false,
+      "badge": "Resistente",
+      "features": ["Alta resistência", "Uso comercial", "Instalação simples"]
+    }
+  ]
+}
